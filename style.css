@@ -7,7 +7,13 @@
 }
 
 body {
-  color: white;
+  min-width: 320px;
+  max-width: 1386px;
+  margin: 0 auto;
+}
+
+.container{
+  max-width: 1386px;
 }
 
 * {
@@ -15,10 +21,13 @@ body {
 }
 
 
-.bg-pet {
+.p-bg {
   background-color: #d35266;
 }
 
+.p-color {
+  color: #d35266;
+}
 
 .nav-img {
 
@@ -39,3 +48,8 @@ body {
 .form-btn{
   margin-left: 8px;
 }
+
+.ad-img {
+    width: 100%;
+  }
+    
