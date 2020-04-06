@@ -1,0 +1,58 @@
+@font-face {
+  font-family: G-bold;
+  src: url("./../font/Gotham-Bold.otf");
+}
+@font-face {
+  font-family: G-light;
+  src: url("./../font/Gotham-Rounded-Light.otf");
+}
+.t-light {
+  font-family: G-light, Helvetica, sans-serif;
+}
+
+.t-bold {
+  font-family: G-bold, Helvetica, sans-serif;
+}
+
+body {
+  font-family: G-bold, Helvetica, sans-serif;
+  max-width: 1386px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1386px;
+}
+
+.p-color {
+  color: #d35266;
+}
+
+.p-bg {
+  background-color: #d35266;
+}
+
+.navbar .logo-img {
+  width: 40px;
+}
+.navbar .navbar-brand {
+  padding: 0;
+}
+
+.search-form {
+  padding-top: 1.5rem;
+}
+.search-form * {
+  margin-right: 2px;
+  border-radius: 0.1rem;
+}
+.search-form .form-btn {
+  margin-left: 8px;
+}
+
+.ad-img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
