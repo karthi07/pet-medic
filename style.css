@@ -16,10 +16,13 @@ body {
   max-width: 1386px;
 }
 
+main {
+  padding-left: 30px;
+}
+
 * {
   font-family: G-bold, Helvetica, sans-serif;
 }
-
 
 .p-bg {
   background-color: #d35266;
@@ -29,10 +32,13 @@ body {
   color: #d35266;
 }
 
-.nav-img {
-
+.logo-img {
+  width: 40px;
 }
 
+.navbar-brand {
+  padding: 0;
+}
 
 /* Search form */
 
@@ -50,6 +56,6 @@ body {
 }
 
 .ad-img {
-    width: 100%;
-  }
+  width: 100%;
+}
     
