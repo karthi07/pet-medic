@@ -1,0 +1,41 @@
+
+@font-face { font-family: G-bold; src: url('font/Gotham-Bold.otf'); }
+@font-face { font-family: G-light; src: url('font/Gotham\ Rounded\ Light.otf'); }
+
+.t-light {
+    font-family: G-light, Helvetica, sans-serif;
+}
+
+body {
+  color: white;
+}
+
+* {
+  font-family: G-bold, Helvetica, sans-serif;
+}
+
+
+.bg-pet {
+  background-color: #d35266;
+}
+
+
+.nav-img {
+
+}
+
+
+/* Search form */
+
+.search-form {
+  padding-top: 1.5rem;
+}
+
+.search-form > * {
+  margin-right: 2px;
+  border-radius: .1rem;
+}
+
+.form-btn{
+  margin-left: 8px;
+}
