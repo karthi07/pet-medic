@@ -121,14 +121,25 @@ body a:hover {
 }
 
 footer {
-  margin: 20px;
+  margin: 30px;
+  font-size: 15px;
   font-family: G-light, Helvetica, sans-serif;
+}
+footer .footer-ctn {
+  margin-bottom: 20px;
 }
 footer .foot-brand {
   font-size: 20px;
+  font-weight: 700;
+}
+footer .abt-logo {
+  width: fit-content;
+  margin: 0 auto;
 }
 footer .about-text {
   font-size: 15px;
+  text-align: justify;
+  padding: 15px;
 }
 footer .cat-title {
   color: #d35266;
@@ -139,6 +150,9 @@ footer .cat-title {
 }
 footer .links-ctn {
   margin: 10px 0;
+}
+footer .links-ctn li {
+  padding-top: 5px;
 }
 footer .site-settings {
   margin-top: 30px;
@@ -156,6 +170,17 @@ footer .setting-text {
   text-align: right;
   text-transform: uppercase;
   font-weight: 700;
+}
+footer .mentions {
+  padding-left: 10px;
+  display: inline;
+  font-size: 12px;
+}
+footer .social-links {
+  padding-right: 20px;
+}
+footer .social-links img {
+  padding: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
