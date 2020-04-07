@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetMedic - Online Pet pharmacy | Search Results</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/search-style.css">
+
+</head>
+<body>
+    
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <img class="logo-img" src="images/logo.png" alt="petmedic logo"> Pet Medic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample07">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"> <img class="nav-img" src="images/home.svg" alt=""> Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> <img src="images/collection.svg" alt=""> Colection</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> <img src="images/collection.svg" alt=""> Purchaced List</a>
+                  </li>
+
+                </ul>
+                
+                <ul class="navbar-nav  my-2 my-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> <img src="images/collection.svg" alt=""> My Cart</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"> <img src="images/collection.svg" alt=""> User Name</a>
+                      </li>
+    
+                </ul>
+              </div>
+
+        </div>
+
+    </nav>
+
+    <main class="container">
+        <div class="home-search p-bg"> 
+            <div class="col p-lg-2 w-75  mx-auto text-center text-white ">
+                <h1 class="display-5 text-left t-bold m-0"> PET MEDIC</h1>
+                <p class="t-bold m-1 text-left">
+                    Get Medicine for your pet online. No more husttle.
+                </p>
+
+
+                <form class="search-form t-light form-inline justify-content-between" action="">
+                    <div>
+                    <select class="form-control form-control-lg" id="inlineFormCustomSelectPref">
+                        <option selected>All Departments </option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    
+                    <input type="text" class="form-control form-control-lg" placeholder=" search for" readonly>
+                    
+                    <input type="text" class="form-control form-control-lg" placeholder="Type here" >
+                    </div>
+
+                    <button class="form-btn form-control form-control-lg btn-primary" type="submit"> Search </button>
+                </form>
+
+
+            </div>
+        </div>
+
+        <div class="resutls-ctn mx-auto container">
+            <div class="row">
+                <div class="left-ctn pt-4">
+                    
+                    <div class="custom-control custom-checkbox form-check-inline">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Rent </label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox form-check-inline">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Ownership </label>
+                    </div>
+
+                </div>
+                <div class="right-ctn ">
+                    <div class="result-info p-4">
+                        <b>120</b>  Results for <b>"vitamin" </b>  Search in <b> Chennai, India </b>
+                    </div>
+
+                    <div class="results">
+                        <div class="result row">
+                            <div class="item-img col-md-auto"> <img src="images/medicines/img1.jpg" alt=""> </div>
+                            <div class="col">
+                                <div class="item-text">
+                                    <h5> Medicine 1 -maker1 - the item's desc</h5>
+                                    <p class="item-use p-color font-weight-bold"> used </p>
+                                    <p class="item-from"> From: <b> Bangalore, KA </b> </p>
+                                </div>
+                                <div class="item-buy d-flex justify-content-between">
+                                    <a href="#"> <div class="add-btn"> + </div> </a>
+                                <div class="item-amt"> 100$</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="footer-ctn d-flex flex-row justify-content-between">
+            <div class="foot-about col-lg-4">
+                <div class="abt-logo">
+                    <a class="foot-brand" href="#"> <img class="logo-img" src="images/logo.png" alt="petmedic logo"> Pet Medic</a>
+                </div>
+                <div class="about-text"> 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                </div>
+            </div>
+            <div class="foot-categories col-lg-3">
+                <div class="cat-title">  Categories </div>
+                <div class="links-ctn d-flex flex-row">
+                    <div class="col"> 
+                        <ul class="list-unstyled"> 
+                            <li> Link 1 </li>
+                            <li> Link 2 </li>
+                            <li> Link 3 </li>
+                            <li> Link 1 </li>
+                            <li> Link 2 </li>
+                            <li> Link 3 </li>
+                        </ul>
+                    </div>
+                    <div class="col"> 
+                        <ul class="list-unstyled"> 
+                            <li> Link 1 </li>
+                            <li> Link 2 </li>
+                            <li> Link 3 </li>
+                            <li> Link 1 </li>
+                            <li> Link 2 </li>
+                            <li> Link 3 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-nav col">
+                <div class="cat-title">  Navigation </div>
+                <div class="links-ctn d-flex flex-row">
+                    <div class="col"> 
+                        <ul class="list-unstyled"> 
+                            <li> Home </li>
+                            <li> Categories </li>
+                            <li> Results </li>
+                            <li> Qualifications </li>
+                            <li> Link 2 </li>
+                            <li> Link 3 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-settings col-lg-3">
+                <div class="setting d-flex justify-content-between"> 
+                    <span class="setting-text"> Country </span> 
+                    <button type="button" class="btn btn-light"> India </button>
+                </div>
+                <div class="setting d-flex justify-content-between"> 
+                    <span class="setting-text"> Language </span> 
+                    <button type="button" class="btn btn-light">English</button>
+                </div>
+                <div class="setting d-flex justify-content-between"> 
+                    <span class="setting-text"> currency </span> 
+                    <button type="button" class="btn btn-light"> Indian Rupee </button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>
+                Copyright @2020 petmedic.in . All Rights Reserved . 
+                <div class="mentions"> 
+                    Design Idea <a target="_blank" href="https://www.behance.net/gallery/24796463/ZATTIX">ZATTIX </a> .
+                    <a target="_blank" rel="noopener" href="https://photos.icons8.com/photos/a-friend-in-need-is-a-friend-indeed--5ac23fd78b65880001e4b29e">Photo</a> by <a target="_blank" rel="noopener" href="https://photos.icons8.com">Moose</a>
+                </div>        
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="images/social/fb.svg" alt=""></a>
+                <a href="#"><img src="images/social/insta.svg" alt=""></a>
+                <a href="#"><img src="images/social/twitter.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

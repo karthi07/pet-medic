@@ -18,6 +18,11 @@ $f-bold: G-bold, Helvetica, sans-serif
 .t-bold
   font-family: $f-bold
 
+* *::before *::after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
 body
   font-family: $f-bold
   max-width: 1386px
@@ -48,7 +53,7 @@ body
     padding: 0
 
 .search-form
-  padding-top: 1.5rem
+  padding-top: 0.5rem
   *
     margin-right: 2px
     border-radius: .1rem
@@ -61,25 +66,35 @@ body
 .ad-img
   width: 100%
 
-/* Shop section */
-
-.shop-sect
-  padding: 1.5rem
+.resutls-ctn
+  width: 95%
   font-family: $f-light
-  h3
-    font-size: 18px
-    font-weight: 800
-    line-height: inherit
+  padding-bottom: 30px
+  border-bottom: 1px solid #afafafb9
+
+  .custom-control
+    display: inline 
+  .result-info
+    border-bottom: 1px solid #afafafb9
+
+.left-ctn
+  -ms-flex: 0 0 20%
+  flex: 0 0 20%
+  max-width: 20%
+  border-right: 1px solid #afafafb9
 
 
-/* Items template */
+.right-ctn
+  -ms-flex: 0 0 80%
+  flex: 0 0 80%
+  max-width: 80%
+  border-right: 1px solid #afafafb9
 
-.items-ctn
-  padding: 15px
-  
-  .col
-    padding: 8px
-    margin: 8px
+
+.results  
+  .result
+    padding: 20px 0
+    margin: 12px 0
     background-color: white
     border: 0.01mm solid #b3afaf83
     font-size: 14px
@@ -88,7 +103,7 @@ body
     margin: 0 auto
     width: fit-content
   img
-    max-width: 220px
+    max-width: 320px
 
   .item-text
     padding: 10px
@@ -116,7 +131,9 @@ body
       font-size: 17px
       font-weight: 700
       color: $bg
-  
+
+
+
 
 
 footer
@@ -170,4 +187,3 @@ footer
     padding-right: 20px
     img
       padding: 0 10px
-

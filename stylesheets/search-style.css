@@ -14,6 +14,12 @@
   font-family: G-bold, Helvetica, sans-serif;
 }
 
+* *::before *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: G-bold, Helvetica, sans-serif;
   max-width: 1386px;
@@ -49,7 +55,7 @@ body a:hover {
 }
 
 .search-form {
-  padding-top: 1.5rem;
+  padding-top: 0.5rem;
 }
 .search-form * {
   margin-right: 2px;
@@ -66,58 +72,70 @@ body a:hover {
   width: 100%;
 }
 
-/* Shop section */
-.shop-sect {
-  padding: 1.5rem;
+.resutls-ctn {
+  width: 95%;
   font-family: G-light, Helvetica, sans-serif;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #afafafb9;
 }
-.shop-sect h3 {
-  font-size: 18px;
-  font-weight: 800;
-  line-height: inherit;
+.resutls-ctn .custom-control {
+  display: inline;
+}
+.resutls-ctn .result-info {
+  border-bottom: 1px solid #afafafb9;
 }
 
-/* Items template */
-.items-ctn {
-  padding: 15px;
+.left-ctn {
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+  border-right: 1px solid #afafafb9;
 }
-.items-ctn .col {
-  padding: 8px;
-  margin: 8px;
+
+.right-ctn {
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  max-width: 80%;
+  border-right: 1px solid #afafafb9;
+}
+
+.results .result {
+  padding: 20px 0;
+  margin: 12px 0;
   background-color: white;
   border: 0.01mm solid #b3afaf83;
   font-size: 14px;
 }
-.items-ctn .item-img {
+.results .item-img {
   margin: 0 auto;
   width: fit-content;
 }
-.items-ctn img {
-  max-width: 220px;
+.results img {
+  max-width: 320px;
 }
-.items-ctn .item-text {
+.results .item-text {
   padding: 10px;
 }
-.items-ctn h5 {
+.results h5 {
   font-size: 20px;
 }
-.items-ctn .item-from {
+.results .item-from {
   align-self: bottom;
   margin: 10px 0 0 0;
 }
-.items-ctn .item-buy {
+.results .item-buy {
   padding: 10px;
 }
-.items-ctn .item-buy a:hover {
+.results .item-buy a:hover {
   text-decoration: none;
 }
-.items-ctn .item-buy .add-btn {
+.results .item-buy .add-btn {
   color: #888;
   line-height: 1;
   padding: 6px;
   border: 0.01mm solid #e6dedec9;
 }
-.items-ctn .item-buy .item-amt {
+.results .item-buy .item-amt {
   font-size: 17px;
   font-weight: 700;
   color: #d35266;
@@ -186,4 +204,4 @@ footer .social-links img {
   padding: 0 10px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=search-style.css.map */
