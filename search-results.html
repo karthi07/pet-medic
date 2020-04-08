@@ -51,7 +51,7 @@
         <div class="home-search p-bg"> 
             <div class="col p-lg-2 w-75  mx-auto text-center text-white ">
                 <h1 class="display-5 text-left t-bold m-0"> PET MEDIC</h1>
-                <p class="t-bold m-1 text-left">
+                <p class="font-weight-bold m-1 text-left t-light">
                     Get Medicine for your pet online. No more husttle.
                 </p>
 
@@ -80,18 +80,76 @@
         <div class="resutls-ctn mx-auto container">
             <div class="row">
                 <div class="left-ctn pt-4">
-                    
-                    <div class="custom-control custom-checkbox form-check-inline">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Rent </label>
+                    <div class="chk-own">
+                        <div class="custom-control custom-checkbox form-check-inline">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Rent </label>
+                        </div>
+    
+                        <div class="custom-control custom-checkbox form-check-inline">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Ownership </label>
+                        </div>    
                     </div>
 
-                    <div class="custom-control custom-checkbox form-check-inline">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Ownership </label>
+                    <div class="chk-cat">
+                        <div class="chk-title"> Category </div>
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">General pharmacy</label>
+                        </div>
+    
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Orgainic Pet Foods </label>
+                        </div>    
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Sublimentries </label>
+                        </div>    
+                    </div>
+
+                    <div class="chk-from">
+                        <div class="chk-title"> Ship From </div>
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Bangalore</label>
+                        </div>
+    
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Chennai </label>
+                        </div>    
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Mumbai </label>
+                        </div>    
+                    </div>
+
+                    <div class="chk-range">
+                        <div class="chk-title"> Price Range </div>
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">10$ - 100$</label>
+                        </div>
+    
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">100$ - 200$</label>
+                        </div>    
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">200$ - 200$</label>
+                        </div> 
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">300$ +</label>
+                        </div>       
                     </div>
 
                 </div>
+
+
                 <div class="right-ctn ">
                     <div class="result-info p-4">
                         <b>120</b>  Results for <b>"vitamin" </b>  Search in <b> Chennai, India </b>
@@ -99,16 +157,69 @@
 
                     <div class="results">
                         <div class="result row">
-                            <div class="item-img col-md-auto"> <img src="images/medicines/img1.jpg" alt=""> </div>
+                            <div class="result-img col-md-auto"> <img src="images/medicines/img1.jpg" alt=""> </div>
                             <div class="col">
-                                <div class="item-text">
+                                <div class="result-text">
                                     <h5> Medicine 1 -maker1 - the item's desc</h5>
-                                    <p class="item-use p-color font-weight-bold"> used </p>
-                                    <p class="item-from"> From: <b> Bangalore, KA </b> </p>
+                                    <p class="result-use p-color font-weight-bold"> used </p>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                                    <p class="result-from"> From: <b> Bangalore, KA </b> </p>
                                 </div>
-                                <div class="item-buy d-flex justify-content-between">
-                                    <a href="#"> <div class="add-btn"> + </div> </a>
-                                <div class="item-amt"> 100$</div>
+                                <div class="result-buy d-flex justify-content-between">
+                                    <button class="btn text-white p-bg"> $ 320 </button>
+                                    <button class="btn text-white p-bg"> Add to Cart </button>
+                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result row">
+                            <div class="result-img col-md-auto"> <img src="images/medicines/img2.jpg" alt=""> </div>
+                            <div class="col">
+                                <div class="result-text">
+                                    <h5> Medicine 2 -maker2 - the item's desc</h5>
+                                    <p class="result-use p-color font-weight-bold"> used </p>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                                    <p class="result-from"> From: <b> Bangalore, KA </b> </p>
+                                </div>
+                                <div class="result-buy d-flex justify-content-between">
+                                    <button class="btn text-white p-bg"> $ 320 </button>
+                                    <button class="btn text-white p-bg"> Add to Cart </button>
+                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result row">
+                            <div class="result-img col-md-auto"> <img src="images/medicines/img3.jpg" alt=""> </div>
+                            <div class="col">
+                                <div class="result-text">
+                                    <h5> Medicine 3 -maker3 - the item's desc</h5>
+                                    <p class="result-use p-color font-weight-bold"> used </p>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                                    <p class="result-from"> From: <b> Bangalore, KA </b> </p>
+                                </div>
+                                <div class="result-buy d-flex justify-content-between">
+                                    <button class="btn text-white p-bg"> $ 320 </button>
+                                    <button class="btn text-white p-bg"> Add to Cart </button>
+                                
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="result row">
+                            <div class="result-img col-md-auto"> <img src="images/medicines/img4.jpg" alt=""> </div>
+                            <div class="col">
+                                <div class="result-text">
+                                    <h5> Medicine 4 -maker4 - the item's desc</h5>
+                                    <p class="result-use p-color font-weight-bold"> used </p>
+                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                                    <p class="result-from"> From: <b> Bangalore, KA </b> </p>
+                                </div>
+                                <div class="result-buy d-flex justify-content-between">
+                                    <button class="btn text-white p-bg"> $ 320 </button>
+                                    <button class="btn text-white p-bg"> Add to Cart </button>
+                                
                                 </div>
                             </div>
                         </div>
