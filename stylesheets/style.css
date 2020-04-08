@@ -88,6 +88,15 @@ body a:hover {
   border: 0.01mm solid #b3afaf83;
   font-size: 14px;
 }
+.items-ctn .carousel-control-prev,
+.items-ctn .carousel-control-next {
+  width: 5%;
+  background-color: #b4b0b085;
+}
+.items-ctn .carousel-item > .items-row {
+  width: 94%;
+  margin: 0 auto;
+}
 .items-ctn .item-img {
   margin: 0 auto;
   width: fit-content;
