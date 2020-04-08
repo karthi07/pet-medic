@@ -49,8 +49,20 @@ body
 .navbar
   .logo-img
     width: 40px
+    svg
+      fill: $bg
   .navbar-brand
     padding: 0
+  .nav-item
+    padding-right: 14px
+  .navbar-nav>.active > .nav-link
+    color: $bg
+  .nav-link>svg
+    fill: $grey
+  .active > .nav-link >svg
+    fill: $bg
+  .user-img
+    width: 24px
 
 .search-form
   padding-top: 0.5rem
