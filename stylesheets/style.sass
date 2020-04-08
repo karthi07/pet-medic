@@ -72,7 +72,13 @@ body
     color: $grey
     background-color: $dark
     border-color: $dark
-
+  .form-control-lg
+    font-size: 1.25rem
+    min-width: 0
+    
+.ad-carousel-ctn
+  width: 85%
+  margin: 0 auto
 
 .ad-img
   width: 100%
@@ -112,7 +118,7 @@ body
     margin: 0 auto
     width: fit-content
   img
-    max-width: 220px
+    max-width: 100%
 
   .item-text
     padding: 10px
@@ -174,6 +180,7 @@ footer
   
   .site-settings
     margin-top: 30px
+    justify-content: space-around
   .setting
     padding: 10px
     .btn
@@ -196,4 +203,86 @@ footer
       margin: 0 10px
     svg:hover
       fill: $bg
+  .cred-line
+    display: none
+
+  /* Media Queries */
+
+@media screen and (min-width: 1024px)
+  .ad h4
+    font-size: 22px
+  .ad p
+    font-size: 18px
+
+@media screen and (max-width: 1023px)
+  .logo-text
+    display: none
+  .user-name
+    display: none  
+
+  .ad h4
+    font-size: 18px
+  .ad p
+    font-size: 16px
+  .items-ctn
+    .col
+      font-size: 13px
+    h5
+      font-size: 17px
+    .item-buy .item-amt
+      font-size: 15px
+  footer
+    .about-text
+      display: none
+    .logo-img
+      display: block
+      margin: 0 auto
+    .foot-categories
+      display: none
+    .cred-line
+      display: inline
+    .mentions
+      padding-left: 0
+
+
+@media screen and (max-width: 767px)
+
+  .logo-text
+    display: inline
+  .user-name
+    display: inline
+
+  .search-form .form-control-lg
+    font-size: 16px
+    height: 100%
+  .search-form .ship-btn
+    display: none !important
+
+  .ad h4
+    font-size: 16px
+  .ad p
+    display: none
+  .ad .btn
+    font-size: 14px
+
+  .items-ctn
+    .items-row > :last-child
+      display: none
+  .search-title
+    font-size: 20px
+    text-align: left
+  .search-tag
+    text-align: left
+    font-size: 16px
+    margin-bottom: 5px
+  .search-form
+    padding-top: 10px
+
+@media screen and (max-width: 600px)
+  .items-ctn
+    .items-row > :nth-child(3)
+      display: none
+
+  .search-form .dpt-btn
+    display: none
 

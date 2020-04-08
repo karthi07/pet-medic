@@ -83,6 +83,15 @@ body a:hover {
   background-color: #383838;
   border-color: #383838;
 }
+.search-form .form-control-lg {
+  font-size: 1.25rem;
+  min-width: 0;
+}
+
+.ad-carousel-ctn {
+  width: 85%;
+  margin: 0 auto;
+}
 
 .ad-img {
   width: 100%;
@@ -124,7 +133,7 @@ body a:hover {
   width: fit-content;
 }
 .items-ctn img {
-  max-width: 220px;
+  max-width: 100%;
 }
 .items-ctn .item-text {
   padding: 10px;
@@ -158,6 +167,7 @@ footer {
   margin: 30px;
   font-size: 15px;
   font-family: G-light, Helvetica, sans-serif;
+  /* Media Queries */
 }
 footer .footer-ctn {
   margin-bottom: 20px;
@@ -190,6 +200,7 @@ footer .links-ctn li {
 }
 footer .site-settings {
   margin-top: 30px;
+  justify-content: space-around;
 }
 footer .setting {
   padding: 10px;
@@ -218,6 +229,121 @@ footer .social-links svg {
 }
 footer .social-links svg:hover {
   fill: #d35266;
+}
+footer .cred-line {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .ad h4 {
+    font-size: 22px;
+  }
+
+  .ad p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .logo-text {
+    display: none;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .ad h4 {
+    font-size: 18px;
+  }
+
+  .ad p {
+    font-size: 16px;
+  }
+
+  .items-ctn .col {
+    font-size: 13px;
+  }
+  .items-ctn h5 {
+    font-size: 17px;
+  }
+  .items-ctn .item-buy .item-amt {
+    font-size: 15px;
+  }
+
+  footer .about-text {
+    display: none;
+  }
+  footer .logo-img {
+    display: block;
+    margin: 0 auto;
+  }
+  footer .foot-categories {
+    display: none;
+  }
+  footer .cred-line {
+    display: inline;
+  }
+  footer .mentions {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo-text {
+    display: inline;
+  }
+
+  .user-name {
+    display: inline;
+  }
+
+  .search-form .form-control-lg {
+    font-size: 16px;
+    height: 100%;
+  }
+
+  .search-form .ship-btn {
+    display: none !important;
+  }
+
+  .ad h4 {
+    font-size: 16px;
+  }
+
+  .ad p {
+    display: none;
+  }
+
+  .ad .btn {
+    font-size: 14px;
+  }
+
+  .items-ctn .items-row > :last-child {
+    display: none;
+  }
+
+  .search-title {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .search-tag {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .search-form {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .items-ctn .items-row > :nth-child(3) {
+    display: none;
+  }
+
+  .search-form .dpt-btn {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
