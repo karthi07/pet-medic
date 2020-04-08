@@ -123,41 +123,56 @@ body a:hover {
   margin: 0 auto;
   width: fit-content;
 }
-.results img {
-  max-height: 180px;
-}
-.results .reslut-text {
-  padding: 10px;
-}
-.results h5 {
-  font-size: 20px;
-  font-weight: 700;
-}
-.results .result-use {
-  margin-bottom: 0.5rem;
-}
-.results .reslut-from {
-  align-self: bottom;
-  margin: 10px 0 0 0;
-}
-.results .reslut-buy {
-  padding: 10px;
-}
-.results .reslut-buy a:hover {
-  text-decoration: none;
-}
-.results .reslut-buy .add-btn {
-  color: #888;
-  line-height: 1;
-  padding: 6px;
-  border: 0.01mm solid #e6dedec9;
-}
-.results .reslut-buy .reslut-amt {
-  font-size: 17px;
-  font-weight: 700;
+.results .carousel-control-ctn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 60px;
+  height: 30px;
   color: #d35266;
+  background-color: #383838;
+}
+.results .carousel-control-prev {
+  width: 50%;
+}
+.results .carousel-control-next {
+  width: 50%;
 }
 
+/*  img
+ *  max-height: 180px
+ * .result-img-carousel
+ *  max-height: 180px
+ *  max-width: 150px
+ *  */
+ * .reslut-text
+ *  padding: 10px
+ * h5
+ *  font-size: 20px
+ *  font-weight: 700
+ *
+ * .result-use
+ *  margin-bottom: 0.5rem
+ *
+ * .reslut-from
+ *  align-self: bottom
+ *  margin: 10px 0 0 0
+ * .reslut-buy
+ *  padding: 10px
+ *
+ *  a:hover
+ *    text-decoration: none
+ *  .add-btn
+ *    color: $grey
+ *    line-height: 1
+ *    padding: 6px
+ *    border: 0.01mm solid #e6dedec9
+ *
+ *  .reslut-amt
+ *    font-size: 17px
+ *    font-weight: 700
+ *    color: $bg */
 .pagination {
   margin-top: 1.5rem;
   font-weight: 600;
@@ -168,6 +183,9 @@ body a:hover {
 .pagination .page-item {
   padding: 0 0.5rem;
   line-height: 1rem;
+}
+.pagination .page-link:focus {
+  box-shadow: none;
 }
 .pagination .active .page-link {
   color: white;

@@ -115,9 +115,28 @@ body
   .reslut-img
     margin: 0 auto
     width: fit-content
-  img
-    max-height: 180px
 
+  .carousel-control-ctn
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: 2
+    width: 60px
+    height: 30px
+    color: $bg
+    background-color: $dark
+
+  .carousel-control-prev
+    width: 50%
+  .carousel-control-next
+    width: 50%
+
+/*  img
+    max-height: 180px
+  .result-img-carousel
+    max-height: 180px
+    max-width: 150px
+    */
   .reslut-text
     padding: 10px
   h5
@@ -159,6 +178,9 @@ body
   .page-item
     padding: 0 0.5rem
     line-height: 1rem
+  .page-link:focus
+    box-shadow: none
+    //box-shadow: 0 0 0 0.2rem $grey
   .active
     .page-link
       color: white
