@@ -69,11 +69,11 @@ body
 .resutls-ctn
   width: 95%
   font-family: $f-light
+  color: $dark
   padding-bottom: 30px
   border-bottom: 1px solid #afafafb9
 
-  .custom-control
-    display: inline 
+
   .result-info
     border-bottom: 1px solid #afafafb9
 
@@ -82,7 +82,16 @@ body
   flex: 0 0 20%
   max-width: 20%
   border-right: 1px solid #afafafb9
+  .custom-control
+    padding-top: 8px
+  .form-check-inline
+    display: inline 
 
+  .chk-title
+    border-bottom: 1px solid #afafafb9
+    font-weight: 700
+    padding: 20px 16px 8px 0
+    margin: 8px 0
 
 .right-ctn
   -ms-flex: 0 0 80%
@@ -91,30 +100,37 @@ body
   border-right: 1px solid #afafafb9
 
 
-.results  
+
+.results
   .result
-    padding: 20px 0
-    margin: 12px 0
-    background-color: white
-    border: 0.01mm solid #b3afaf83
+    padding: 16px 0
+    margin: 6px 0
+    border-bottom: 1px solid #b3afaf83
     font-size: 14px
-    
-  .item-img
+
+  .result:nth-child(2)
+    background-color: white
+
+  .reslut-img
     margin: 0 auto
     width: fit-content
   img
-    max-width: 320px
+    max-height: 180px
 
-  .item-text
+  .reslut-text
     padding: 10px
   h5
     font-size: 20px
+    font-weight: 700
 
-  .item-from
+  .result-use
+    margin-bottom: 0.5rem
+
+  .reslut-from
     align-self: bottom
     margin: 10px 0 0 0
   
-  .item-buy
+  .reslut-buy
     padding: 10px
 
     a:hover
@@ -127,7 +143,7 @@ body
       padding: 6px
       border: 0.01mm solid #e6dedec9
 
-    .item-amt
+    .reslut-amt
       font-size: 17px
       font-weight: 700
       color: $bg

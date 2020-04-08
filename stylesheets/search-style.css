@@ -75,11 +75,9 @@ body a:hover {
 .resutls-ctn {
   width: 95%;
   font-family: G-light, Helvetica, sans-serif;
+  color: #383838;
   padding-bottom: 30px;
   border-bottom: 1px solid #afafafb9;
-}
-.resutls-ctn .custom-control {
-  display: inline;
 }
 .resutls-ctn .result-info {
   border-bottom: 1px solid #afafafb9;
@@ -91,6 +89,18 @@ body a:hover {
   max-width: 20%;
   border-right: 1px solid #afafafb9;
 }
+.left-ctn .custom-control {
+  padding-top: 8px;
+}
+.left-ctn .form-check-inline {
+  display: inline;
+}
+.left-ctn .chk-title {
+  border-bottom: 1px solid #afafafb9;
+  font-weight: 700;
+  padding: 20px 16px 8px 0;
+  margin: 8px 0;
+}
 
 .right-ctn {
   -ms-flex: 0 0 80%;
@@ -100,42 +110,48 @@ body a:hover {
 }
 
 .results .result {
-  padding: 20px 0;
-  margin: 12px 0;
-  background-color: white;
-  border: 0.01mm solid #b3afaf83;
+  padding: 16px 0;
+  margin: 6px 0;
+  border-bottom: 1px solid #b3afaf83;
   font-size: 14px;
 }
-.results .item-img {
+.results .result:nth-child(2) {
+  background-color: white;
+}
+.results .reslut-img {
   margin: 0 auto;
   width: fit-content;
 }
 .results img {
-  max-width: 320px;
+  max-height: 180px;
 }
-.results .item-text {
+.results .reslut-text {
   padding: 10px;
 }
 .results h5 {
   font-size: 20px;
+  font-weight: 700;
 }
-.results .item-from {
+.results .result-use {
+  margin-bottom: 0.5rem;
+}
+.results .reslut-from {
   align-self: bottom;
   margin: 10px 0 0 0;
 }
-.results .item-buy {
+.results .reslut-buy {
   padding: 10px;
 }
-.results .item-buy a:hover {
+.results .reslut-buy a:hover {
   text-decoration: none;
 }
-.results .item-buy .add-btn {
+.results .reslut-buy .add-btn {
   color: #888;
   line-height: 1;
   padding: 6px;
   border: 0.01mm solid #e6dedec9;
 }
-.results .item-buy .item-amt {
+.results .reslut-buy .reslut-amt {
   font-size: 17px;
   font-weight: 700;
   color: #d35266;
