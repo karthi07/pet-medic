@@ -88,6 +88,7 @@ body a:hover {
   flex: 0 0 20%;
   max-width: 20%;
   border-right: 1px solid #afafafb9;
+  height: 100%;
 }
 .left-ctn .custom-control {
   padding-top: 8px;
@@ -155,6 +156,23 @@ body a:hover {
   font-size: 17px;
   font-weight: 700;
   color: #d35266;
+}
+
+.pagination {
+  margin-top: 1.5rem;
+  font-weight: 600;
+}
+.pagination .page-link {
+  color: #383838;
+}
+.pagination .page-item {
+  padding: 0 0.5rem;
+  line-height: 1rem;
+}
+.pagination .active .page-link {
+  color: white;
+  background-color: #d35266;
+  border-color: #d35266;
 }
 
 footer {
