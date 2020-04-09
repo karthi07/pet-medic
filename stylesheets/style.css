@@ -17,7 +17,7 @@
 body {
   font-family: G-bold, Helvetica, sans-serif;
   max-width: 1386px;
-  min-width: 320px;
+  min-width: 425px;
   margin: 0 auto;
   background-color: #f0ececea;
 }
@@ -49,6 +49,9 @@ body a:hover {
 }
 .navbar .navbar-brand {
   padding: 0;
+}
+.navbar .navbar-brand :hover {
+  color: #d35266;
 }
 .navbar .nav-item {
   padding-right: 14px;
@@ -275,7 +278,8 @@ footer .cred-line {
   .items-ctn .item-buy .item-amt {
     font-size: 15px;
   }
-
+}
+@media screen and (max-width: 992px) {
   footer .site-settings {
     display: none;
   }
@@ -300,6 +304,10 @@ footer .cred-line {
 
   .user-name {
     display: inline;
+  }
+
+  .search-box {
+    margin-right: 8px;
   }
 
   .search-tag {
@@ -392,6 +400,12 @@ footer .cred-line {
 
   .search-form .dpt-btn {
     display: none;
+  }
+  .search-form .search-box {
+    margin-right: 0;
+  }
+  .search-form .form-btn {
+    width: 100%;
   }
 
   .social-links {

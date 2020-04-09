@@ -21,7 +21,7 @@ $f-bold: G-bold, Helvetica, sans-serif
 body
   font-family: $f-bold
   max-width: 1386px
-  min-width: 320px
+  min-width: 425px
   margin: 0 auto
   background-color: #f0ececea
 
@@ -46,8 +46,11 @@ body
     width: 40px
     svg
       fill: $bg
+
   .navbar-brand
     padding: 0
+    :hover
+      color: $bg
   .nav-item
     padding-right: 14px
   .navbar-nav>.active > .nav-link
@@ -237,6 +240,8 @@ footer
       font-size: 17px
     .item-buy .item-amt
       font-size: 15px
+
+@media screen and (max-width: 992px)
   footer
     .site-settings
       display: none
@@ -250,21 +255,21 @@ footer
     .mentions
       padding-left: 0
 
-
 @media screen and (max-width: 767px)
 
   .logo-text
     display: inline
   .user-name
     display: inline
-  
+  .search-box
+    margin-right: 8px
   .search-tag
     font-family: $f-light
 
   .items-ctn
     .items-row > :nth-child(3)
       display: none
-      
+
   .search-form .form-control-lg
     font-size: 16px
     height: 100%
@@ -328,8 +333,13 @@ footer
       .item-amt
         font-size: 12px   
 
-  .search-form .dpt-btn
-    display: none
+  .search-form
+    .dpt-btn
+      display: none
+    .search-box
+      margin-right: 0 
+    .form-btn
+      width: 100%
 
   .social-links
     display: none

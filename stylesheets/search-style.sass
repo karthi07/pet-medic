@@ -18,15 +18,10 @@ $f-bold: G-bold, Helvetica, sans-serif
 .t-bold
   font-family: $f-bold
 
-* *::before *::after
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
-  box-sizing: border-box
-
 body
   font-family: $f-bold
   max-width: 1386px
-  min-width: 320px
+  min-width: 425px
   margin: 0 auto
   background-color: #f0ececea
 
@@ -51,8 +46,11 @@ body
     width: 40px
     svg
       fill: $bg
+
   .navbar-brand
     padding: 0
+    :hover
+      color: $bg
   .nav-item
     padding-right: 14px
   .navbar-nav>.active > .nav-link
@@ -64,8 +62,15 @@ body
   .user-img
     width: 24px
 
+.search-ctn
+  width: 80%
+
+.search-title,
+.search-tag
+  text-align: left
+
 .search-form
-  padding-top: 0.5rem
+  padding-top: 1.5rem
   *
     margin-right: 2px
     border-radius: .1rem
@@ -74,7 +79,10 @@ body
     color: $grey
     background-color: $dark
     border-color: $dark
-
+  .form-control-lg
+    font-size: 1.25rem
+    min-width: 0
+    
 .ad-carousel-ctn
   width: 85%
   margin: 0 auto
@@ -82,21 +90,24 @@ body
 .ad-img
   width: 100%
 
+.ad-carousel-ctn
+  width: 85%
+  margin: 0 auto
+
 .resutls-ctn
   width: 95%
   font-family: $f-light
   color: $dark
   padding-bottom: 30px
-  border-bottom: 1px solid #afafafb9
 
 
   .result-info
     border-bottom: 1px solid #afafafb9
 
 .left-ctn
-  -ms-flex: 0 0 20%
-  flex: 0 0 20%
-  max-width: 20%
+  -ms-flex: 0 0 25%
+  flex: 0 0 25%
+  max-width: 25%
   border-right: 1px solid #afafafb9
   height: 100%
   .custom-control
@@ -111,9 +122,9 @@ body
     margin: 8px 0
 
 .right-ctn
-  -ms-flex: 0 0 80%
-  flex: 0 0 80%
-  max-width: 80%
+  -ms-flex: 0 0 75%
+  flex: 0 0 75%
+  max-width: 75%
   border-right: 1px solid #afafafb9
 
 
@@ -131,7 +142,8 @@ body
   .reslut-img
     margin: 0 auto
     width: fit-content
-
+  .add-cart-btn2
+    display: none
   .carousel-control-ctn
     position: absolute
     bottom: 0
@@ -205,10 +217,15 @@ body
 
 
 
+
 footer
   margin: 30px
   font-size: 15px
   font-family: $f-light
+  margin-top: 15px
+  padding-top: 15px
+  border-top: 2px solid #e6dedec9
+
   .footer-ctn
     margin-bottom: 20px
   .foot-brand    
@@ -236,6 +253,7 @@ footer
   
   .site-settings
     margin-top: 30px
+    justify-content: space-around
   .setting
     padding: 10px
     .btn
@@ -258,3 +276,204 @@ footer
       margin: 0 10px
     svg:hover
       fill: $bg
+  .cred-line
+    display: none
+
+
+
+  /* Media Queries */
+
+@media screen and (min-width: 1024px)
+  .ad h4
+    font-size: 22px
+  .ad p
+    font-size: 18px
+
+@media screen and (max-width: 1023px)
+  .logo-text
+    display: none
+  .user-name
+    display: none  
+
+  .left-ctn .form-check-inline
+    display: block
+  .ad h4
+    font-size: 18px
+  .ad p
+    font-size: 16px
+  .items-ctn
+    .items-row > :last-child
+      display: none
+    .col
+      font-size: 13px
+    h5
+      font-size: 17px
+    .item-buy .item-amt
+      font-size: 15px
+
+
+@media screen and (max-width: 992px)
+
+  .result-text
+    h5
+      font-size: 18px
+    p
+      font-size: 13px
+      margin-bottom: 8px
+    .result-from
+      margin-bottom: 8px
+
+
+  footer
+    .site-settings
+      display: none
+    .logo-img
+      display: block
+      margin: 0 auto
+    .foot-categories
+      display: none
+    .cred-line
+      display: inline
+    .mentions
+      padding-left: 0
+
+
+@media screen and (max-width: 767px)
+
+  .logo-text
+    display: inline
+  .user-name
+    display: inline
+  .search-box
+    margin-right: 8px
+  .search-tag
+    font-family: $f-light
+
+  .custom-control-label
+    font-size: 14px
+  .result-text
+    h5
+      font-size: 17px
+    .result-desc
+      display: none
+  .result-buy
+    .btn
+      font-size: 16px
+      padding: 6px
+      line-height: 17px
+
+  .items-ctn
+    .items-row > :nth-child(3)
+      display: none
+
+  .search-form .form-control-lg
+    font-size: 16px
+    height: 100%
+  .search-form .ship-btn
+    display: none !important
+
+  .ad h4
+    font-size: 16px
+  .ad p
+    display: none
+  .ad .btn
+    font-size: 14px
+  
+  .shop-sect
+    h3
+      font-size: 16px
+
+  .search-title
+    font-size: 17px
+    text-align: left
+  .search-tag
+    text-align: left
+    font-size: 16px
+    margin-bottom: 5px
+  .search-form
+    padding-top: 10px
+  
+  .foot-nav
+    display: none
+
+@media screen and (max-width: 600px)
+
+  .left-ctn
+    max-width: 30%
+  .right-ctn
+    max-width: 70%
+  .custom-control-label
+    font-size: 12px
+
+  .result-info
+    font-size: 14px
+  
+  .left-ctn .chk-title
+    font-size: 15px
+    padding-top: 8px
+  .ad
+    .btn
+      font-size: 13px
+      padding: 5px
+    
+    h4
+      font-size: 14px
+
+    .ad-amt
+      display: none
+
+  .result-text
+    h5
+      font-size: 15px
+  .result-buy
+    .btn
+      font-size: 13px
+      padding: 6px
+      line-height: 14px
+  .result-cnt
+    padding: 0 6px
+  .result-img .col
+    padding: 0 6px
+  
+  .result-from
+    display: none
+
+  .results
+    .add-cart-btn
+      display: none
+    .add-cart-btn2
+      display: block
+
+  .shop-sect
+    .d-flex > span
+      display: none
+  .items-ctn
+    .col
+      font-size: 13px
+    h5
+      font-size: 13px
+      font-weight: 500
+    .item-from
+      display: none
+    .item-use
+      margin-bottom: 0
+    
+    .item-buy 
+      padding-top: 0
+      .item-amt
+        font-size: 12px   
+
+  .search-form
+    .dpt-btn
+      display: none
+    .search-box
+      margin-right: 0 
+    .form-btn
+      width: 100%
+
+  .pagination a   
+    font-size: 14px
+    line-height: 14px
+    padding: 6px
+  .social-links
+    display: none
