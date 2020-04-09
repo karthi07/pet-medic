@@ -2,7 +2,6 @@
   font-family: G-bold;
   src: url("./../font/Gotham-Bold.otf");
 }
-
 @font-face {
   font-family: G-light;
   src: url("./../font/Gotham-Rounded-Light.otf");
@@ -112,6 +111,11 @@ footer .social-links svg:hover {
 .search-form .form-control-lg {
   font-size: 1.25rem;
   min-width: 0;
+}
+
+.search-title,
+.search-tag {
+  text-align: center;
 }
 
 .ad-carousel-ctn {
@@ -296,7 +300,6 @@ footer .cred-line {
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 1023px) {
   .logo-text {
     display: none;
@@ -330,7 +333,6 @@ footer .cred-line {
     font-size: 15px;
   }
 }
-
 @media screen and (max-width: 992px) {
   footer .site-settings {
     display: none;
@@ -353,7 +355,6 @@ footer .cred-line {
     padding-left: 0;
   }
 }
-
 @media screen and (max-width: 767px) {
   .logo-text {
     display: inline;
@@ -416,7 +417,6 @@ footer .cred-line {
     display: none;
   }
 }
-
 @media screen and (max-width: 600px) {
   .ad .btn {
     font-size: 13px;
