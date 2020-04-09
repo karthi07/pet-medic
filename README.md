@@ -10,12 +10,6 @@ Notable implementation :
 Desktop Version
 ![screenshot](/images/screenshots/screen1.png)
 
-Tablet Version
-![screenshot](/images/screenshots/screen2.png)
-
-Mobile Version
-![screenshot](/images/screenshots/screen3.png)
-
 
 ## Built With
 
@@ -25,7 +19,7 @@ Mobile Version
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/karthi07/newsweek-clone/features/index.html)
+[Live Demo Link](https://rawcdn.githack.com/karthi07/pet-medic/c6af7140b57a37770bf2beb3584dc280ba4eed95/index.html)
 
 
 ## Author
