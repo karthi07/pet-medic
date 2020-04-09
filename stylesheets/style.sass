@@ -153,6 +153,10 @@ footer
   margin: 30px
   font-size: 15px
   font-family: $f-light
+  margin-top: 15px
+  padding-top: 15px
+  border-top: 2px solid #e6dedec9
+
   .footer-ctn
     margin-bottom: 20px
   .foot-brand    
@@ -225,6 +229,8 @@ footer
   .ad p
     font-size: 16px
   .items-ctn
+    .items-row > :last-child
+      display: none
     .col
       font-size: 13px
     h5
@@ -232,7 +238,7 @@ footer
     .item-buy .item-amt
       font-size: 15px
   footer
-    .about-text
+    .site-settings
       display: none
     .logo-img
       display: block
@@ -251,7 +257,14 @@ footer
     display: inline
   .user-name
     display: inline
+  
+  .search-tag
+    font-family: $f-light
 
+  .items-ctn
+    .items-row > :nth-child(3)
+      display: none
+      
   .search-form .form-control-lg
     font-size: 16px
     height: 100%
@@ -264,10 +277,11 @@ footer
     display: none
   .ad .btn
     font-size: 14px
+  
+  .shop-sect
+    h3
+      font-size: 16px
 
-  .items-ctn
-    .items-row > :last-child
-      display: none
   .search-title
     font-size: 20px
     text-align: left
@@ -277,12 +291,45 @@ footer
     margin-bottom: 5px
   .search-form
     padding-top: 10px
+  
+  .foot-nav
+    display: none
 
 @media screen and (max-width: 600px)
-  .items-ctn
-    .items-row > :nth-child(3)
+
+  .ad
+    .btn
+      font-size: 13px
+      padding: 5px
+    
+    h4
+      font-size: 14px
+
+    .ad-amt
       display: none
+
+
+  .shop-sect
+    .d-flex > span
+      display: none
+  .items-ctn
+    .col
+      font-size: 13px
+    h5
+      font-size: 13px
+      font-weight: 500
+    .item-from
+      display: none
+    .item-use
+      margin-bottom: 0
+    
+    .item-buy 
+      padding-top: 0
+      .item-amt
+        font-size: 12px   
 
   .search-form .dpt-btn
     display: none
 
+  .social-links
+    display: none
