@@ -6,6 +6,7 @@ Pet Medic - is Capstone project on HTML, CSS. The Website is created as Sample O
 Notable implementation :
   * Image and Item Carousel using Bootstrap Carousel.
   * Responsive design for Laptop, Tablet and Mobile L.
+  * Search tag animate using js
 
 Desktop Version
 ![screenshot](/images/screenshots/screen1.png)
