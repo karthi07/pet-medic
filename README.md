@@ -20,7 +20,7 @@ Desktop Version
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/karthi07/pet-medic/c6af7140b57a37770bf2beb3584dc280ba4eed95/index.html)
+[Live Demo Link](https://karthi07.github.io/pet-medic/)
 
 
 ## Author
